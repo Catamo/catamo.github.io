@@ -133,7 +133,9 @@ html {
 .content {
   display: none;
   position: absolute;
-  margin-top: 100vh;
+  left: 0;
+  right: 0;
+  top: 100vh;
 }
 
 .content.active {
@@ -149,6 +151,7 @@ html {
 
 .seccion *:not(h2){
   margin: 20px 10px;
+  padding: 0;
 }
 
 .seccion h2{
@@ -160,7 +163,7 @@ html {
   margin-bottom: 5px;
 }
 
-.seccion p{
+.seccion p, .seccion a{
   text-align: justify;
   font-size: 20px;
   color: #666666;
@@ -183,7 +186,7 @@ html {
   left: 0;
   right: 0;
   margin: 20px auto;
-  width: 1000px;
+  width: 81%;
 }
 
 .seccion .icon-container{
@@ -193,6 +196,7 @@ html {
   width: 100px;
   height: 100px;
   padding: 20px;
+  margin: 10px 5px;
   -webkit-box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.39);
      -moz-box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.39);
           box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.39);
@@ -211,6 +215,39 @@ html {
 .OnePower{
   background: transparent;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  #shootingStars{
+    left: -30%;
+  }
+
+  .seccion{
+    margin: 0 !important;
+    padding: 25px;
+  }
+
+  .seccion :not(h2) {
+    margin: 20px 3px;
+  }
+
+  .seccion h2{
+    font-size: 1.2em;
+  }
+
+  .seccion p, .seccion a{
+    font-size: 1em;
+  }
+
+  .seccion li span {
+    font-size: .9em;
+  }
+
+  .seccion .icon-container {
+    width: 45px;
+    height: 45px;
+  }
+
 }
 
 @media (max-width: 850px) {
