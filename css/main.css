@@ -19,7 +19,10 @@ html {
   width: 100%;
   background: url(../img/bg-principal.jpg) no-repeat;
   background-size: 135%;
-  background-position: center ;
+  background-position: center;
+  -webkit-transition: background-size 999ms;
+  transition: background-size 999ms;
+
 }
 
 .lead-container{
