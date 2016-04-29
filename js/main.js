@@ -1,5 +1,4 @@
 $(window).ready(function () {
-  $(".overlay").fadeOut(999);
   $(".preloadBG").each(function () {
     var t, n, r = $(this),
     i = r.css("background-image");
@@ -15,6 +14,12 @@ $("img").load(function () {
   currentImgCount++;
   currentImgCount == imgCount && setTimeout(function () {
     /mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+      $(".overlay").fadeOut(999);
+
+        $('.background').css('background-size','110%');
+        $('.onload').addClass('active');
+        $("html,body").animate({scrollTop: 0}, 100);
+        
       $("img").unbind("load");
     },
     2e3)
@@ -33,8 +38,3 @@ $("img").load(function () {
   }
 
   $("html,body").scrollTop(0);
-  $(window).ready(function() {
-    $('.background').css('background-size','110%');
-    $('.onload').addClass('active');
-    $("html,body").animate({scrollTop: 0}, 100);
-  });
