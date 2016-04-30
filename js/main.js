@@ -3,13 +3,15 @@ $(window).ready(function () {
     var t, n, r = $(this),
     i = r.css("background-image");
     i && (t = i.replace(/(^url\()|(\)$|[\"\'])/g, ""),
-    n = new Image, n.src = t, n.complete && $(n).load(function(){
-      $(".overlay").fadeOut(333);      
+    n = new Image, n.src = t, $(n).load(function(){
+      $(".overlay").hide();
       $('.background').css('background-size','110%');
       $('.onload').addClass('active');
       $("html,body").animate({scrollTop: 0}, 100);
-    }));
-  });
+    }),
+    n.complete && $(n).trigger("load")
+  );
+});
 });
 
 
