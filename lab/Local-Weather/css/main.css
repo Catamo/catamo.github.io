@@ -1,0 +1,174 @@
+html, body{
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  background-color: #f4f2f1;
+  font-family: Montserrat;
+  transform-style: preserve-3d;
+}
+
+.window{
+  position: relative;
+  max-width: 480px;
+  min-width: 480px;
+  max-height: 645px;
+  min-height: 545px;
+  height: 100%;
+  background: #eff3f9;
+  border-radius: 5px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50, -50%, 0);
+  -webkit-box-shadow: 0 15px 25px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 25px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-height: 545px){
+  .window{
+    margin: 0;
+    transform: none;
+    left: 0;
+    top: 0;
+  }
+}
+
+.content{
+  position: relative;
+  height: 50%;
+}
+
+.content #imgCondition{
+  padding: 25px;
+  height: 125px;
+}
+
+.content #imgCity{
+  position: absolute;
+  height: 250px;
+  bottom: -90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.content img.right{
+  margin: 45px 40px 20px 20px;
+}
+
+.static-clouds{
+  position: relative;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: url(../assets/svg/static-clouds.svg) no-repeat;
+  background-position: 0 0;
+  background-size: 105%;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 67%;
+  background: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.bottom h1{
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.bottom h2{
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: .9em;
+  color: #B7B7B7;
+}
+
+.bottom ul, .bottom li{
+  display: inline-block;;
+}
+
+.bottom ul{
+  font-family: Roboto;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.bottom li{
+  padding: 0 15px;
+  font-weight: 300;
+  vertical-align: middle;;
+}
+
+.bottom li:nth-child(1), .bottom li:nth-child(5){
+  font-size: 1em;
+  padding-top: 15px;
+}
+
+.bottom li:nth-child(2), .bottom li:nth-child(4){
+  font-size: 2.5em;
+  padding-top: 10px;
+}
+
+.bottom li:nth-child(3){
+  font-size: 4em;
+}
+
+/**UTILS**/
+
+.right{
+  float: right;
+}
+
+/**LIB CLASESS**/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -150%);
+    transform: translate(-50, -150%);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50, -50%);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
