@@ -1,0 +1,12 @@
+@import url(template-main.css);
+
+.spotlight.style1 .image.take-half{
+    width: 50%;
+}
+
+@media screen and (max-width: 736px) and (orientation: portrait)
+{
+  .spotlight.style1 .image.take-half {
+      width: 100%;
+  }
+}
