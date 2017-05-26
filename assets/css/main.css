@@ -1,12 +1,25 @@
 @import url(template-main.css);
 
-.spotlight.style1 .image.take-half{
-    width: 50%;
+#portfolio .image {
+  min-height: 16rem;
+  background-position: 50%;
+  background-size: auto 105%;
+  background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 736px) and (orientation: portrait)
-{
-  .spotlight.style1 .image.take-half {
-      width: 100%;
-  }
+#portfolio .inner {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+
+.button.special.active {
+    background-color: #1ebdd1;
+}
+
+.gallery.style2 > .inner {
+    /*display: flex;
+    justify-content: center;*/
+}
+
+.no-margin {
+  margin: 0;
 }
