@@ -1,0 +1,13 @@
+{
+    "workbench.statusBar.visible": false,
+    "workbench.statusBar.feedback.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Material Theme Ocean",
+    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "editor.lineHeight": 45,
+    "editor.renderIndentGuides": false,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    }
+}
