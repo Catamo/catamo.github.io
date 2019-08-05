@@ -2,24 +2,40 @@
 
 <html>
 	<head>
-		<title>Magic in a machine world - Catamo</title>
+		<title>Senior Software Developer - Catamo</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="A software engineer is nothing more than a mage in the actual world. This will be my Grimoire, join me as I create magic in a machine world.."/>
+		<meta name="description" content="Baby steps from being another Software Developer to finally become a badass founder"/>
 		<meta name="robots" content="noodp"/>
 		<link rel="canonical" href="https://catamo.github.io/" />
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Magic in a machine world - Catamo" />
-		<meta property="og:description" content="A software engineer is nothing more than a mage in the actual world. This will be my Grimoire, join me as I create magic in a machine world.." />
+		<meta property="og:title" content="Trying to start up startups - Catamo" />
+		<meta property="og:description" content="Baby steps from being another Software Developer to finally become a badass founder" />
 		<meta property="og:url" content="https://catamo.github.io/" />
-		<meta property="og:site_name" content="Magic in a machine world" />
+		<meta property="og:site_name" content="Trying to start up startups" />
 		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:description" content="A software engineer is nothing more than a mage in the actual world. This will be my Grimoire, join me as I create magic in a machine world.." />
-		<meta name="twitter:title" content="Magic in a machine world - Catamo" />
+		<meta name="twitter:description" content="Baby steps from being another Software Developer to finally become a badass founder" />
+		<meta name="twitter:title" content="Trying to start up startups - Catamo" />
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119122529-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-119122529-1');
+		</script>
 
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>	
+			.content img {
+				width: 100%;
+    			border-radius: 0.25rem;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -28,8 +44,25 @@
 				<!-- One -->
 					<section class="banner style2 orient-center content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1 style="">Thank you!</h1>
-							<p class="major"><!--[-->We will be in contact!<!--]--></p>
+							<img src="./images/thankyou/still-here.jpg" style="display: none"/>
+							<img src="./images/thankyou/surprised-pool.jpg" />
+							
+							<div style="display: none">
+								<h1>You’re still here? It's over. Go home!</h1>
+								<p><!--[-->
+									Oh? You want to know more about what I am doing. Well head out and check my <a href="http://catamo.github.io/blog">blog</a> if you want.
+								</p>
+							</div>
+
+							<div>
+								<h1>You actually used it!</h1>
+								<p><!--[-->
+									<b>Thank you!</b> People usually ignore my contact form and reach me through <a href="https://www.linkedin.com/in/victor-catamo-rojas/">LinkedIn</a> or direct 
+									<a href="mailto:victor.catamo.rojas@gmail.com">Email</a>, it's pretty cool that you actually used the form.<!--]-->
+								</p>
+								<p>We will be in contact!</p>
+							</div>
+
 							<ul class="actions vertical">
 								<li><a href="./index.html" class="button big wide smooth-scroll-middle">Take me back</a></li>
 							</ul>
@@ -65,5 +98,12 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				setTimeout(function youStillHere() {
+					$(".content img:eq(1), .content > div:eq(1)").hide();
+					$(".content img:eq(0), .content > div:eq(0)").fadeIn(666);
+					$()
+				}, 10000);
+			</script>
 	</body>
 </html>
