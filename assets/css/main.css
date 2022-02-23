@@ -37,3 +37,8 @@
     text-align: center;
   }
 }
+
+.spotlight.style5 .content {
+  background-color: rgb(255,255,255,0.95);
+  max-width: 100%;
+}
