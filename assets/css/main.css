@@ -1,5 +1,14 @@
 @import url(template-main.css);
 
+body {
+  background-color: #30363d;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 #portfolio .image {
   min-height: 16rem;
   background-position: 50%;
@@ -13,11 +22,6 @@
 
 .button.special.active {
     background-color: #1ebdd1;
-}
-
-.gallery.style2 > .inner {
-    /*display: flex;
-    justify-content: center;*/
 }
 
 .no-margin {
@@ -36,9 +40,30 @@
   #wrapper section:nth-child(1) {
     text-align: center;
   }
+
+  #wrapper .spotlight.style5 {
+      padding: 2rem 0 0.1rem 0;
+  }
 }
 
 .spotlight.style5 .content {
   background-color: rgb(255,255,255,0.95);
-  max-width: 100%;
+  min-width: 100%;
+}
+
+
+#wrapper .banner.style3,
+#wrapper .spotlight.style5 {
+  padding: 3rem 0 1.5rem 0;
+}
+
+@media screen and (min-width: 736px) {
+  #wrapper .banner.style3,
+  #wrapper .spotlight.style5 {
+    padding: 3rem 3rem 1.5rem 3rem;
+  }
+}
+
+#wrapper .wrapper.style1 > .inner {
+  padding: 3rem 2.5rem 3rem 2.5rem;
 }
